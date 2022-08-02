@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "test.@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "tes..t@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "te@t@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "test@.example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": ".test@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "test@example..com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "test@example.",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "test",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "test@",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "test@ex!ample.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "test@@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "this\\ is\"really\"not\\allowed@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "test.example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "12345678910",
+    "email": "あいうえお@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  }
+]

@@ -1,0 +1,2 @@
+name,phoneNumber,email,file
+Testname TestSurname,12345678910,test@example.com,src/test/resources/testdata-files/test.pdf

@@ -1,0 +1,91 @@
+
+plugins {
+    id "io.qameta.allure" version "2.10.0"
+    id "java"
+}
+
+group 'org.java.gradle.selenide.template'
+version '0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.codeborne:selenide:6.6.6'
+
+
+    //junit
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.8.2'
+    implementation 'io.qameta.allure:allure-attachments:2.18.1'
+    testImplementation 'org.junit.platform:junit-platform-launcher:1.8.2'
+    testImplementation 'org.junit.platform:junit-platform-runner:1.8.2'
+
+    //allure
+    testImplementation 'io.qameta.allure:allure-junit5:2.18.1'
+    testImplementation 'io.qameta.allure:allure-junit-platform:2.18.1'
+    testImplementation 'io.qameta.allure:allure-selenide:2.18.1'
+    testImplementation 'io.qameta.allure:allure-commandline:2.18.1'
+    runtimeOnly 'org.aspectj:aspectjweaver:1.9.9.1'
+
+
+    //logger
+    implementation 'org.apache.logging.log4j:log4j-core:2.18.0'
+    implementation 'org.apache.logging.log4j:log4j-api:2.18.0'
+    implementation 'org.apache.logging.log4j:log4j-jul:2.18.0'
+
+// https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    implementation 'org.apache.poi:poi-ooxml:3.9'
+// https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox
+    implementation 'org.apache.pdfbox:pdfbox:2.0.1'
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.3'
+// https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    testImplementation 'io.rest-assured:rest-assured:5.1.1'
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.3'
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
+
+
+
+}
+
+    allure {
+        version = '2.18.1'
+        aspectjweaver = true
+        autoconfigure = true
+        useJUnit5 {
+            version = '2.18.1'
+            autoconfigureListeners.set(true)
+
+        }
+    }
+
+
+
+test {
+    def thread = System.getenv()['THREADS']
+    if (thread == null) {
+        thread = 1
+    }
+
+    systemProperties = [
+            'junit.jupiter.execution.parallel.enabled'                 : 'true',
+            //'junit.jupiter.execution.parallel.config.strategy': 'dynamic',
+            'junit.jupiter.execution.parallel.config.strategy'         : 'fixed',
+            'junit.jupiter.execution.parallel.config.fixed.parallelism': thread
+
+
+    ]
+
+    useJUnitPlatform {
+//        includeTags 'testfactory'
+        includeEngines 'junit-jupiter'
+    }
+    systemProperty 'log4j.configurationFile', 'log4j2.properties'
+    systemProperty 'java.util.logging.manager', 'org.apache.logging.log4j.jul.LogManager'
+
+}

@@ -1,0 +1,4 @@
+name,phoneNumber,email,letter,file
+,12345678910,test@example.com,Test cover letter,src/test/resources/testdata-files/test.pdf
+Testname TestSurname,,test@example.com,Test cover letter,src/test/resources/testdata-files/test.pdf
+Testname TestSurname,12345678910,,Test cover letter,src/test/resources/testdata-files/test.pdf

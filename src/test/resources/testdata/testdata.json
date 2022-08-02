@@ -1,0 +1,7 @@
+{
+  "name": "Testname TestSurname",
+  "phoneNumber": "12345678910",
+  "email": "test@example.com",
+  "file": "src/test/resources/testdata-files/test.pdf",
+  "letter": "Test cover letter"
+}

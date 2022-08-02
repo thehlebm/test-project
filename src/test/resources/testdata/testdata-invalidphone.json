@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+    "email": "test@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "!",
+    "email": "test@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "@",
+    "email": "test@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "#",
+    "email": "test@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "!@#$%^&*()-_=+{[}]|/:;''<,>.?",
+    "email": "test@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя ",
+    "email": "test@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  },
+  {
+    "name": "Testname TestSurname",
+    "phoneNumber": "あいうえお",
+    "email": "test@example.com",
+    "file": "src/test/resources/testdata-files/test.pdf",
+    "letter": "Test cover letter"
+  }
+]
