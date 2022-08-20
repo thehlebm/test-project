@@ -8,6 +8,7 @@ import org.junit.Test;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static api.data.EndPoints.*;
 import static api.data.TestData.*;
 import static io.restassured.RestAssured.given;
 
